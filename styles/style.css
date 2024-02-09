@@ -1,15 +1,19 @@
+@charset "UTF-8";
+/* начало Heder */
 .header {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: rgb(20, 16, 36);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .header__logo {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
-  margin-left: 100px;
+  justify-self: center;
 }
 
 .nav {
@@ -34,15 +38,101 @@
 }
 
 .address {
-  margin-right: 100px;
+  justify-self: center;
   color: white;
-  justify-self: end;
   text-transform: none;
 }
 .address .tel {
+  width: 100%;
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (max-width: 770px) {
+  .header {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 0;
+  }
+}
+/*Конец Header */
+/* Начало Main */
+/* img section */
+.cover {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(20, 16, 36);
+  color: white;
+}
+
+/* left side */
+.cover-left-side {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.left-side-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+}
+.main-title .main-title-header {
+  display: block;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.main-title .main-title-text {
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.cover-left-side-button {
+  width: 200px;
+  height: 60px;
+  background-color: rgb(213, 32, 39);
+  padding: 20px 40px;
+  color: white;
+  border: transparent;
+}
+
+/* right side */
+.cover-right-side {
+  position: relative; /* for absolute ellipse */
+}
+
+.girl-section {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  width: 300px;
+  height: 550px;
+}
+.girl-section .img-girl {
+  width: 100%;
+  height: 100%;
+}
+
+.ellipse {
+  position: absolute;
+  z-index: 0;
+  margin: auto auto 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: 90%;
+  border: 40px solid white;
+  border-radius: 50%;
+}
+
+/* end of img section *//*# sourceMappingURL=style.css.map */

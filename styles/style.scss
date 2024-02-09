@@ -1,58 +1,147 @@
+/* начало Heder */
 .header {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: rgba(20, 16, 36, 1);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(20, 16, 36, 1);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .header__logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    margin-left: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  justify-self: center;
 }
 
 .nav {
-    color: white;
-    justify-self: center;
-    font-size: 20px;
+  color: white;
+  justify-self: center;
+  font-size: 20px;
 
-    .nav-list {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        gap: 40px;
-        align-items: center;
-        list-style: none;
+  .nav-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
 
-        .nav-element {
+    .nav-element {
+      .nav-link {
+        text-decoration: none;
+      }
 
-            .nav-link {
-                text-decoration: none;
-            }
-
-            .nav-link:hover {
-                cursor: pointer;
-                color: red;
-            }
-        }
+      .nav-link:hover {
+        cursor: pointer;
+        color: red;
+      }
     }
+  }
 }
 
 .address {
-    margin-right: 100px;
-    color: white;
-    justify-self: end;
-    text-transform: none;
+  justify-self: center;
+  color: white;
+  text-transform: none;
 
-        .tel {
-            font-family: "Jost", sans-serif;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 30px;
-            text-decoration: none;
-        }
+  .tel {
+    width: 100%;
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+  }
 }
 
+@media (max-width: 770px) {
+  .header {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 0;
+  }
+}
+/*Конец Header */
 
+/* Начало Main */
+/* img section */
+.cover {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(20, 16, 36, 1);
+  color: white;
+}
+/* left side */
+.cover-left-side {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
 
+.left-side-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+
+  .main-title-header {
+    display: block;
+
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+
+  .main-title-text {
+    display: block;
+
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+
+.cover-left-side-button {
+  width: 200px;
+  height: 60px;
+  background-color: rgba(213, 32, 39, 1);
+  padding: 20px 40px;
+  color: white;
+  border: transparent;
+}
+/* right side */
+.cover-right-side {
+  position: relative; /* for absolute ellipse */
+}
+
+.girl-section {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  width: 300px;
+  height: 550px;
+
+  .img-girl {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ellipse {
+  position: absolute;
+  z-index: 0;
+  margin: auto auto 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: 90%;
+  border: 40px solid white;
+  border-radius: 50%;
+}
+
+/* end of img section */
