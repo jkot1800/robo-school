@@ -35,7 +35,7 @@
 
       .nav-link:hover {
         cursor: pointer;
-        color: red;
+        color: rgba(213, 32, 39, 1);
       }
     }
   }
@@ -62,10 +62,10 @@
     padding: 0;
   }
 }
-/*Конец Header */
+/*END OF HEADER */
 
 /* Начало Main */
-/* img section */
+/* Main -1- first section */
 .cover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -112,7 +112,14 @@
   padding: 20px 40px;
   color: white;
   border: transparent;
+  transition: 1s;
 }
+
+.cover-left-side-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 /* right side */
 .cover-right-side {
   position: relative; /* for absolute ellipse */
@@ -144,4 +151,224 @@
   border-radius: 50%;
 }
 
-/* end of img section */
+@media (max-width: 770px) {
+  .cover {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 30px;
+  }
+  /* right side */
+  .cover-right-side {
+    grid-row: 1;
+  }
+
+  .girl-section {
+    width: 240px;
+    height: 395px;
+  }
+
+  .ellipse {
+    width: 80%;
+    height: 90%;
+    border: 30px solid white;
+    border-radius: 50%;
+  }
+
+  /* left side */
+  .cover-left-side {
+    display: flex;
+    align-items: start;
+  }
+
+  .left-side-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .main-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .main-title-header {
+      display: block;
+      text-align: center;
+      font-size: 35px;
+      text-transform: uppercase;
+    }
+
+    .main-title-text {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+
+  .cover-left-side-button {
+    margin: auto;
+    justify-self: center;
+    width: 200px;
+    height: 60px;
+    background-color: rgba(213, 32, 39, 1);
+    padding: 20px 40px;
+    color: white;
+    border: transparent;
+    transition: 1s;
+  }
+
+  .cover-left-side-button:hover {
+    cursor: pointer;
+    transform: scale(1);
+  }
+}
+
+/* END OF FIRST SECTION */
+
+/* Main - 2 - second section */
+
+.second-section {
+  padding: 150px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.second-section-title {
+  width: 70%;
+  font-size: 25px;
+  font-weight: normal;
+
+  .second-section-title-span {
+    font-weight: bold;
+  }
+}
+
+.second-section-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  gap: 30px;
+}
+
+.second-section-list-item {
+  display: flex;
+  flex-direction: column;
+
+  .list-item-number {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(213, 32, 39, 1);
+  }
+}
+
+@media (max-width: 770px) {
+  .second-section {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .second-section-title {
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+  
+    .second-section-title-span {
+      font-weight: bold;
+    }
+  }
+  
+  .second-section-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .second-section-list-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+    .list-item-number {
+      font-size: 50px;
+      font-weight: bold;
+      color: rgba(213, 32, 39, 1);
+    }
+  }
+}
+
+/* END OF SECOND SECTION */
+
+/* MAIN -3- THIRD SECTION START */
+
+.third-section {
+  padding: 150px 200px;
+  background-color: rgba(249, 249, 249, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.third-section-title {
+  font-size: 40px;
+}
+
+.third-section-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  list-style: none;
+}
+
+.third-section-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.third-section-list-item-header {
+  font-size: 24px;
+}
+
+@media (max-width: 770px) {
+  .third-section {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .third-section-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .third-section-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    list-style: none;
+  }
+  
+  .third-section-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .third-section-list-item-header {
+    font-size: 20px;
+  }
+}
+
+/* END OF THIRD SECTION */
