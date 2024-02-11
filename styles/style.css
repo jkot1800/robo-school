@@ -429,9 +429,9 @@
   font-size: 1.3em;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1600px) {
   .second-section {
-    padding: 150px 400px;
+    padding: 150px 200px;
     display: flex;
     flex-direction: column;
     gap: 40px;
