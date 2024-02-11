@@ -71,7 +71,7 @@
     color: white;
     justify-self: center;
     align-self: center;
-    font-size: 15px;
+    font-size: 14px;
   }
   .nav .nav-list {
     width: 100%;
@@ -102,7 +102,7 @@
     text-decoration: none;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 760px) {
   .header {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     padding: 0;
@@ -325,7 +325,7 @@
     border-radius: 50%;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 760px) {
   .cover {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -429,6 +429,20 @@
   font-size: 1.3em;
 }
 
+@media (max-width: 2000px) {
+  .second-section-list-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-section-list-item .list-item-number {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: rgb(213, 32, 39);
+  }
+  .second-section-list-item .list-item-text {
+    font-size: 1.2em;
+  }
+}
 @media (max-width: 1600px) {
   .second-section {
     padding: 150px 200px;
@@ -497,7 +511,7 @@
     font-size: 1em;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 760px) {
   .second-section {
     padding: 60px 20px;
     display: flex;
@@ -609,7 +623,7 @@
     font-size: 1em;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 760px) {
   .third-section {
     padding: 60px 20px;
     display: flex;
@@ -663,8 +677,8 @@
   list-style: none;
 }
 .fourt-section-list .fourth-section-list-item {
-  width: 250px;
-  height: 450px;
+  width: 400px;
+  height: 700px;
   margin-bottom: 15px;
 }
 .fourt-section-list .fourth-section-list-item .fourth-section-card {
@@ -682,6 +696,45 @@
   display: block;
 }
 
+@media (max-width: 2000px) {
+  .fourth-section {
+    width: 100%;
+    padding: 150px 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .fourt-section-title {
+    font-size: 3em;
+  }
+  .fourt-section-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 40px;
+    list-style: none;
+  }
+  .fourt-section-list .fourth-section-list-item {
+    width: 250px;
+    height: 450px;
+    margin-bottom: 15px;
+  }
+  .fourt-section-list .fourth-section-list-item .fourth-section-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .fourt-section-list .fourth-section-list-item .fourth-section-card .trainer-img {
+    width: 100%;
+    height: 75%;
+  }
+  .fourt-section-list .fourth-section-list-item .fourth-section-card .more-information {
+    display: block;
+  }
+}
 @media (max-width: 1600px) {
   .fourth-section {
     width: 100%;
@@ -730,7 +783,7 @@
     gap: 60px;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 760px) {
   .fourth-section {
     width: 100%;
     padding: 60px 20px;
@@ -797,8 +850,8 @@
   justify-self: end;
 }
 .fifth-section-list .fifth-section-list-item-card {
-  width: 350px;
-  height: 450px;
+  width: 450px;
+  height: 550px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 30px;
@@ -808,24 +861,24 @@
   text-align: center;
 }
 .fifth-section-list .fifth-section-list-item-card .section-fith-card-header {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .fifth-section-list .fifth-section-list-item-card .section-fith-card-price {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
 }
 .fifth-section-list .fifth-section-list-item-card .section-fith-card-description {
-  font-size: 1em;
+  font-size: 2em;
 }
 .fifth-section-list .fifth-section-list-item-card .section-fith-card-button {
-  width: 200px;
+  width: 350px;
   height: 60px;
   align-self: center;
   background-color: rgb(213, 32, 39);
   padding: 10px 25px;
   color: white;
   border: transparent;
-  font-size: 0.7em;
+  font-size: 1em;
   border-radius: 10px;
 }
 .fifth-section-list .fifth-section-list-item-card:hover {
@@ -835,6 +888,69 @@
   background-color: rgb(20, 16, 36);
 }
 
+@media (max-width: 2000px) {
+  .fifth-section {
+    padding: 100px 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .fifth-section-title {
+    font-size: 3em;
+  }
+  .fifth-section-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+  }
+  .fifth-section-list .fifth-section-list-item-one {
+    justify-self: start;
+  }
+  .fifth-section-list .fifth-section-list-item-two {
+    justify-self: center;
+  }
+  .fifth-section-list .fifth-section-list-item-three {
+    justify-self: end;
+  }
+  .fifth-section-list .fifth-section-list-item-card {
+    width: 350px;
+    height: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .fifth-section-list .fifth-section-list-item-card .section-fith-card-header {
+    font-size: 1.5em;
+  }
+  .fifth-section-list .fifth-section-list-item-card .section-fith-card-price {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .fifth-section-list .fifth-section-list-item-card .section-fith-card-description {
+    font-size: 1em;
+  }
+  .fifth-section-list .fifth-section-list-item-card .section-fith-card-button {
+    width: 200px;
+    height: 60px;
+    align-self: center;
+    background-color: rgb(213, 32, 39);
+    padding: 10px 25px;
+    color: white;
+    border: transparent;
+    font-size: 0.7em;
+    border-radius: 10px;
+  }
+  .fifth-section-list .fifth-section-list-item-card:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: white;
+    background-color: rgb(20, 16, 36);
+  }
+}
 @media (max-width: 1600px) {
   .fifth-section {
     padding: 100px 200px;
@@ -961,7 +1077,7 @@
     background-color: rgb(20, 16, 36);
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 760px) {
   .fifth-section {
     padding: 60px 20px;
     display: flex;
